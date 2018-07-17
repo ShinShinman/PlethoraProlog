@@ -1,0 +1,1152 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"all",
+				"allowTouchMove"
+			],
+			[
+				"fo",
+				"forward"
+			],
+			[
+				"swi",
+				"swiper-container"
+			],
+			[
+				"for",
+				"forwardSwiper"
+			],
+			[
+				"infoO",
+				"infoObjToggle"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"flip",
+				"flipIt_x1"
+			],
+			[
+				"src",
+				"srcset\tAttr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"infoObj"
+			],
+			[
+				"ke",
+				"keyCode"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"_",
+				"_480"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"clo",
+				"closeBtn"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ma",
+				"malina"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"info",
+				"infoObj"
+			],
+			[
+				"forward",
+				"forward-button"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"swiper",
+				"swiper-slide"
+			],
+			[
+				"back",
+				"backward"
+			],
+			[
+				"sw",
+				"swiper-slide"
+			],
+			[
+				"sli",
+				"slideTemplate"
+			],
+			[
+				"n",
+				"note"
+			],
+			[
+				"backward",
+				"backwardSwiper"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"coll",
+				"collection-brick"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"outl",
+				"outline-color"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"margin-b",
+				"margin-bottom"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"gall",
+				"gallery"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"te",
+				"template"
+			],
+			[
+				"sea",
+				"search-page"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"h",
+				"crosshair"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"thum",
+				"thumbnails"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"ga",
+				"galleryTop"
+			],
+			[
+				"gal",
+				"galleryTop"
+			],
+			[
+				"t",
+				"template"
+			],
+			[
+				"temp",
+				"templateImage"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"alpha",
+				"alphaLinks"
+			],
+			[
+				"va",
+				"value-of"
+			],
+			[
+				"art",
+				"artistsss"
+			],
+			[
+				"lett",
+				"letters"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"su",
+				"substring"
+			],
+			[
+				"sl",
+				"select"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"bri",
+				"bricks-container"
+			],
+			[
+				"a",
+				"apply-templates"
+			],
+			[
+				"top",
+				"topOffset"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"size",
+				"size-small"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"copy",
+				"copy-of"
+			],
+			[
+				"ne",
+				"news-education"
+			],
+			[
+				"FONT",
+				"font-size"
+			],
+			[
+				"FO",
+				"font-weight"
+			],
+			[
+				"cou",
+				"cursor"
+			],
+			[
+				"get",
+				"getDetails"
+			],
+			[
+				"current",
+				"current-language"
+			],
+			[
+				"main",
+				"main-menu"
+			],
+			[
+				"templa",
+				"template"
+			],
+			[
+				"footer",
+				"footer-container"
+			],
+			[
+				"priv",
+				"privVar"
+			],
+			[
+				"MARG",
+				"margin-bottom"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"mag",
+				"margin-top"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"revreplace",
+				"revreplace"
+			],
+			[
+				"cart",
+				"cart-button"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"curr",
+				"currency"
+			],
+			[
+				"sear",
+				"searchTips"
+			],
+			[
+				"q",
+				"qstr"
+			],
+			[
+				"cons",
+				"constructionArchiveLoader"
+			],
+			[
+				"load",
+				"loadMore"
+			],
+			[
+				"book",
+				"bookshop-book"
+			],
+			[
+				"pa",
+				"page"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"ca-",
+				"ca-order-response"
+			],
+			[
+				"img",
+				"imgURL"
+			],
+			[
+				"val",
+				"value-of"
+			],
+			[
+				"list-ty",
+				"list-style"
+			],
+			[
+				"v",
+				"value-of"
+			],
+			[
+				"museum",
+				"museum-collection"
+			],
+			[
+				"museum-collec",
+				"museum-collections"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"pl",
+				"placeholder"
+			],
+			[
+				"sub",
+				"subscribe-form"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"valu",
+				"value"
+			],
+			[
+				"isoto",
+				"isotopeY"
+			],
+			[
+				"exhi",
+				"exhibitions-archive"
+			],
+			[
+				"iso",
+				"isotope"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"grid",
+				"gridItem"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"hash",
+				"hashFilter"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"books",
+				"bookshop-category"
+			],
+			[
+				"bookshop",
+				"bookshop-items"
+			],
+			[
+				"po",
+				"position"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 370.0,
+		"last_filter": "xml",
+		"selected_items":
+		[
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"xm",
+				"Set Syntax: XML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"xxm",
+				"Set Syntax: XML"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"js_",
+				"Snippet: js_IIFE"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"_",
+				"Snippet: js_namespace"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pc",
+				"Package Control: List Packages"
+			],
+			[
+				"xsl",
+				"Set Syntax: XSL"
+			],
+			[
+				"snip",
+				"Snippet: htmlboiler"
+			],
+			[
+				"mk",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"md",
+				"Set Syntax: Markdown"
+			],
+			[
+				"htl",
+				"Set Syntax: HTML"
+			],
+			[
+				"hml",
+				"Set Syntax: HTML"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"markdow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"emm",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"pre",
+				"Preferences: Settings - Default"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/ma.wroc.pl/workspace/.gitignore",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/index.html",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/coffee/main.coffee",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/package.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/coffee/components/main.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/js/main.min.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/ajax/slaids.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/js_backup.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/scss/pages/_home.scss",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/scss/_media-queries.scss",
+		"/C/xampp/htdocs/ma.wroc.pl/workspace/.git/COMMIT_EDITMSG",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/dist/ajax/slaids.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/gulpfile.js",
+		"/Z/Gulp for static pages/gulpfile.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/scss/_variables.scss",
+		"/C/Users/shinman/Desktop/komiksy.txt",
+		"/C/Users/shinman/Desktop/Bootstrap media queries.txt",
+		"/Z/Gulp for static pages/package.json",
+		"/C/Users/shinman/Desktop/SVG Sprites/package.json",
+		"/Z/SVG Sprites/package.json",
+		"/C/Users/shinman/Desktop/Gulp for static pages/package.json",
+		"/C/Users/shinman/Desktop/Plethora/Materialy/180629_MCM_www_opis.txt",
+		"/C/Users/shinman/Desktop/Plethora/Materialy/180627_MCM_www_opis.txt",
+		"/Z/MA WWW/_dev/gulpfile.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/ajax/slaids.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/index.html",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/scss/pages/_home.scss",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/owl.carousel.html",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/scss/main.scss",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/scss/_vendor.scss",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/css/main.css",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/swiper.html",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/node_modules/owl.carousel/dist/assets/owl.carousel.css",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/coffee/components.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/coffee/components/main.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/coffee/main.coffee.BAK.coffee",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/coffee/main.coffee",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/gulpfile.js",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/package.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/package.json.BAK.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/scss/_variables.scss",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/scss/_mixins.scss",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/scss/typography/_fonts.scss",
+		"/C/Users/shinman/Desktop/Gulp for static pages/gulpfile.js",
+		"/C/Users/shinman/Desktop/Plethora/App/scss/_mixins.scss",
+		"/C/Users/shinman/Desktop/Architekci/przyklady opisow.txt",
+		"/C/Users/shinman/Desktop/Architekci/json wzor.txt",
+		"/C/Users/shinman/Desktop/Nowy dokument tekstowy (2).txt",
+		"/C/Users/shinman/Desktop/trening/athletic developement.txt",
+		"/C/Users/shinman/AppData/Roaming/Adobe/InDesign/Version 11.0/en_US/Scripts/Scripts Panel/allTextFramesToLayer.jsx",
+		"/C/Users/shinman/Desktop/trening.txt",
+		"/C/Users/shinman/Desktop/Nowy dokument tekstowy.txt",
+		"/C/Users/shinman/Desktop/MNWr Foldery info/Etno/EN/MNWr folder informacyjny ETNO EN 0.1.1 Folder/Instructions.txt",
+		"/C/Users/shinman/Desktop/Fonty - FTP.txt",
+		"/C/Users/shinman/Desktop/City Dent WWW/prezentacja/html/index.html",
+		"/C/Users/shinman/Downloads/ID SKRYPTY [Bersz]/ID SKRYPTY [Bersz].txt",
+		"/C/Users/shinman/Downloads/ID SKRYPTY [Bersz]/FindChangeByList.jsx",
+		"/C/Users/shinman/Downloads/complete/RA623_Underground-Resistance.txt",
+		"/C/Users/shinman/Desktop/Prawidłowe proporcje stronicy/Prawidłowe proporcje stronicy i kolumny książki - podpisy do ilu.txt",
+		"/C/Users/shinman/Desktop/Prawidłowe proporcje stronicy/Prawidłowe proporcje stronicy i kolumny książki 1.txt",
+		"/C/Users/shinman/Desktop/yszt/Albertas Gurskas - Kaligrafijos it srifto pagrindai.txt",
+		"/G/Rozlicenia wyjazdów/3vallees.txt",
+		"/C/Users/shinman/Desktop/MNWr Foldery info/Etno/MNWr ME zamałe foty (do wymiany).txt",
+		"/Z/Zelek/śmierć 2018/ogloszenie.txt",
+		"/C/Users/shinman/Desktop/SO39 portfolio/NOMUS/NOMUS lead.txt",
+		"/C/Users/shinman/Desktop/SO39 portfolio/NOMUS/NOMUS lead 2.txt",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/collection.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_navigation-collection.xsl",
+		"/C/Users/shinman/Desktop/Łysy to chuj/html/css/main.css",
+		"/C/Users/shinman/Desktop/Łysy to chuj/html/index.html",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/kiosk_item.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_kiosk-item.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/utilities/_main-menu.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/master.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/package.json",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_main-menu.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_lang-btn.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/utilities/_page-header.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_page-header.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_footer.xsl",
+		"/C/Users/shinman/Desktop/NOMUS WWW/dział Blog/manifest/manifest se.txt",
+		"/C/Users/shinman/Desktop/NOMUS WWW/dział Blog/manifest/manifest es.txt",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/utilities/_kiosk-brick.scss",
+		"/C/Users/shinman/Desktop/rekawice.txt",
+		"/C/xampp/htdocs/digital-playground/.htaccess",
+		"/C/xampp/htdocs/city-dent.pl/.htaccess",
+		"/Z/Gulp Build System/gulpfile.js",
+		"/Z/Gulp Build System/package.json",
+		"/Z/Gulp Build System/todo.md",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_kiosk-brick.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/kiosk.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/kiosk_search.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/kiosk_terms-and-conditions.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/_variables.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/_pages.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_navigation-kiosk.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/utilities/_navigation-kiosk.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/_utilities.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/collection_search.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_kiosk-search.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/utilities/_search-box.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_search-box.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_kiosk.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_kiosk-terms.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/utilities/_collection-brick.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/collection_item.xsl",
+		"/C/xampp/htdocs/city-dent.pl/workspace/package.json",
+		"/C/Users/shinman/Desktop/test/gulpfile.js",
+		"/C/Users/shinman/Desktop/test/package.json",
+		"/C/Users/shinman/Desktop/SVG Sprites/package-lock.json",
+		"/C/Users/shinman/Desktop/SVG Sprites/gulpfile.js",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/.git/COMMIT_EDITMSG",
+		"/C/Users/shinman/Desktop/SVG Sprites/assets/svg/symbols.svg",
+		"/C/Users/shinman/Desktop/image compression/gulpfile.js",
+		"/C/Users/shinman/Desktop/image compression/package.json",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/collection_our-tags.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/collection_artists.xsl",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/home.xsl",
+		"/C/Users/shinman/Desktop/NOMUS WWW/Newsletter/social linki nomus",
+		"/C/Users/shinman/Desktop/NOMUS WWW/Newsletter/MailChimpTemplate.html",
+		"/C/Users/shinman/Desktop/osso KDiJW/Andrzej Sokulski/osso KDiJW T1 1.4 Folder/Instructions.txt",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/_media-queries.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/main.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/utilities/_footer.scss",
+		"/C/Users/shinman/Downloads/TMP/_main-menu.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_collection-item.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_collection-our-tags.scss",
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/blog.xsl"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 103.0,
+		"where_history":
+		[
+			"C:\\Users\\shinman\\Desktop\\Plethora\\Plethora App\\prod",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace\\pages",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace\\utilities",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace\\scss",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace\\pages",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace\\utilities",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace\\pages",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace",
+			"C:\\xampp\\htdocs\\nomus.gda.pl\\workspace\\scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"?v",
+			"v0.5.4",
+			"indow ",
+			"var ",
+			"//",
+			"3rem",
+			"v0.5.3",
+			"v0.5.0",
+			"v0.5.*",
+			"v0.5.2",
+			"webkit",
+			"infoObjToggle",
+			"v0.5.1",
+			"v0.5.0",
+			"?v0.4.0",
+			"z-index",
+			"disp",
+			"images/flipIt_x1.png",
+			"320",
+			"380",
+			"strong",
+			"div",
+			"marginTop",
+			"_480",
+			".png",
+			"grid-columns(4)",
+			"5",
+			"p",
+			"yszt",
+			"/.+/",
+			">/(.+)/.<",
+			"\"/(.+)/",
+			"\"/(.+)/\\s",
+			"\\\"/(.+)/\\s",
+			"\"/(.+)/\\s",
+			"\\s/(.+)/\\s",
+			"/(.+)/",
+			"/",
+			"-",
+			"1440",
+			"consol",
+			"\"title\": \"\",",
+			"h1",
+			"\"",
+			"(\"\"description\": \"\": \")(.+)(\",)",
+			"(\"description\": \")(.+)(\",)",
+			",,",
+			"\n\n\t",
+			",\n",
+			"(?<=\"description\":\\s\")(.+)(?=\")",
+			"(\"description\":\\s\")(.+)(?=\")",
+			"(?=description\":\\s)\\s\"",
+			"*",
+			"\"*",
+			"\n\n",
+			"\n",
+			"\n}",
+			"}",
+			"{",
+			"note",
+			"description",
+			"image",
+			"title",
+			"**",
+			"*",
+			"**",
+			"::selection",
+			"sectio",
+			"content:",
+			"conso",
+			"note\"}",
+			"forward",
+			"mySwiper",
+			"forwardSwiper",
+			"mySwiper",
+			"cur",
+			"trg",
+			"$(this)",
+			"swiper",
+			"@",
+			"image2",
+			"image\"",
+			"image",
+			"title",
+			"apiT",
+			"swiper",
+			"init",
+			"MA",
+			"div",
+			"^\\l",
+			"note",
+			"title",
+			"image",
+			"r",
+			" \\.",
+			"Kuro-Maj",
+			"navigation-collection",
+			"outline",
+			" o ",
+			" w ",
+			" i ",
+			"article",
+			"lang-btn",
+			"$language",
+			"footer",
+			"span",
+			"header",
+			"h2",
+			"images",
+			"collection",
+			"kiosk-items",
+			"collection",
+			"news",
+			"console",
+			"#templateImage",
+			"#templateImage img",
+			"img",
+			"main-menu",
+			"tag",
+			"guides",
+			"blog",
+			"-blog",
+			"st ",
+			"st",
+			"{$root}/",
+			"h3",
+			"h4",
+			"h3"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"v0.6.0",
+			"#",
+			"v0.5.4",
+			"v0.5.3",
+			"v0.5.2",
+			"v0.5.1",
+			"?v0.5.0",
+			"",
+			"\"<em>$1</em> ",
+			" <em>$1</em> ",
+			"480",
+			"\"title\": \"&nbsp;\",",
+			"$1<p>$2</p>$3",
+			",",
+			",\n\t",
+			",",
+			"<p>t</p>",
+			"ttt",
+			"<p>$1</p>",
+			"forwardSwiper",
+			"swiper-container",
+			".",
+			"Kurc-Maj",
+			"collection-navigation",
+			" o&nbsp;",
+			" w&nbsp;",
+			" i&nbsp;",
+			"$lang",
+			"sTop",
+			"grid-columns",
+			"slogan",
+			".sticky-nav"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.crypto_error":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "plethora.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"js",
+				"C:\\Users\\shinman\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\JavaScript\\js_plugin.sublime-snippet"
+			],
+			[
+				".footer",
+				"extensions\\markdown\\lib\\htmlpurifier-4.6.0-standalone\\standalone\\HTMLPurifier\\ConfigSchema\\schema\\AutoFormat.RemoveEmpty.RemoveNbsp.txt"
+			],
+			[
+				"ctrl",
+				"C:\\Users\\shinman\\AppData\\Roaming\\Sublime Text 3\\Packages\\Default\\Default (Windows).sublime-keymap"
+			],
+			[
+				"scr",
+				"C:\\Users\\shinman\\Downloads\\MS - 20.03.2015\\scripts.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\xampp\\htdocs\\ma.wroc.pl\\workspace\\MAWWW-E3.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 279.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

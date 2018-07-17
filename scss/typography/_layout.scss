@@ -1,0 +1,17 @@
+/* LAYOUT */
+
+.row {
+	width: grid-columns(12);
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+}
+
+section {
+	@extend .row;
+
+	&:last-of-type {
+		margin-bottom: 150px;
+	}
+}

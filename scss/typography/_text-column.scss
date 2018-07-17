@@ -1,0 +1,46 @@
+/* Szerokość kolumny tekstowej */
+.text-column {
+	width: columns-width(8);
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+
+	header {
+		margin-bottom: 24px;
+
+		h1 {
+			text-transform: uppercase;
+		}
+		h2 {
+			margin-bottom: 7px;
+		}
+	}
+
+	article {
+		h1 {
+			@extend .typo-h2;
+			@extend .small-stripe;
+		}
+		h2 {
+			@extend .typo-h3;
+		}
+		h3 {
+			@extend .typo-h4;
+		}
+		img {
+			max-width: 100%;
+		}
+		a:before {
+			content: " ";
+		}
+		a:hover {
+			color: white;
+			background-color: black;
+			opacity: 1;
+		}
+		ul {
+			margin-bottom: 24px;
+		}
+	}
+}

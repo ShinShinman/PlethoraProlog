@@ -1,0 +1,60 @@
+/* Headres sizes */
+
+.reset {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+h1 {
+	@extend .typo-h1;
+
+	//margin-bottom: $gutter;
+}
+h2 {
+	@extend .typo-h2;
+}
+h3 {
+	@extend .typo-h3;
+}
+h4 {
+	@extend .typo-h4;
+}
+p {
+	@extend .reset;
+	font-size: $global-font-size;
+	margin-bottom: 1.5 * $global-font-size;
+}
+
+/* Experimental */
+.typo-h1 {
+	@extend .reset;
+	font-size: 42px;
+	line-height: 1;
+	text-align: left;
+
+	margin-bottom: 6px;
+}
+.typo-h2 {
+	@extend .reset;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+
+	margin-bottom: 6px;
+}
+.typo-h3 {
+	@extend .reset;
+	font-size: 21px;
+	text-align: left;
+
+	margin-bottom: 6px;
+}
+.typo-h4 {
+	@extend .reset;
+	font-size: $global-font-size;
+	text-align: left;
+
+	margin-bottom: 6px;
+}

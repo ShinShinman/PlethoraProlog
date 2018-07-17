@@ -1,0 +1,50 @@
+// CHARACTER STYLES //
+
+.icon {
+	font-family: 'MArch';
+	font-size: inherit;
+}
+
+.stripe {
+	border-top-width: 8px;
+	border-top-style: solid;
+	padding-top: 10px;
+}
+.small-stripe {
+	border-top-width: 4px;
+	border-top-style: solid;
+	padding-top: 5px;
+}
+.color-label {
+	color: white;
+	font-weight: normal;
+	padding: 0 6px;
+}
+.tag {
+	@extend .color-label;
+	background-color: lightgrey;
+}
+.event {
+	@extend .color-label;
+	background-color: black;
+}
+.oppening {
+	@extend .color-label;
+	background-color: red;
+}
+
+.comment {
+	background-color: yellow;
+}
+
+.date {
+	color: red;	//data w edukacji (też w Wystawach i Wydarzeniach, ale tam jest osobna reguła). Czy to ma być globalne?
+}
+
+.hide {
+	display: none;
+}
+
+.no-break {
+	white-space: nowrap;
+}
