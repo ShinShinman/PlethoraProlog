@@ -519,6 +519,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3908,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/_media-queries.scss",
+			"settings":
+			{
+				"buffer_size": 2235,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -702,14 +719,20 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod"
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/scss"
 	],
 	"file_history":
 	[
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/package-lock.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/package.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/node_modules/hoek/package.json",
+		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/.gitignore",
+		"/C/Users/shinman/Desktop/Albertas Gurskas - Kaligrafijos it srifto pagrindai/Albertas Gurskas - Kaligrafijos it srifto pagrindai.txt",
+		"/C/Users/shinman/Desktop/Albertas Gurskas - Kaligrafijos it srifto pagrindai/00 gurskas.txt",
 		"/C/xampp/htdocs/ma.wroc.pl/workspace/.gitignore",
 		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/index.html",
 		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/coffee/main.coffee",
-		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/package.json",
 		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/coffee/components/main.js",
 		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/js/main.min.js",
 		"/C/Users/shinman/Desktop/Plethora/Plethora App/prod/ajax/slaids.json",
@@ -828,12 +851,7 @@
 		"/C/Users/shinman/Desktop/NOMUS WWW/Newsletter/MailChimpTemplate.html",
 		"/C/Users/shinman/Desktop/osso KDiJW/Andrzej Sokulski/osso KDiJW T1 1.4 Folder/Instructions.txt",
 		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/_media-queries.scss",
-		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/main.scss",
-		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/utilities/_footer.scss",
-		"/C/Users/shinman/Downloads/TMP/_main-menu.scss",
-		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_collection-item.scss",
-		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/pages/_collection-our-tags.scss",
-		"/C/xampp/htdocs/nomus.gda.pl/workspace/pages/blog.xsl"
+		"/C/xampp/htdocs/nomus.gda.pl/workspace/scss/main.scss"
 	],
 	"find":
 	{
@@ -861,6 +879,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"hoek",
 			"?v",
 			"v0.5.4",
 			"indow ",
@@ -987,8 +1006,7 @@
 			"st",
 			"{$root}/",
 			"h3",
-			"h4",
-			"h3"
+			"h4"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1038,8 +1056,68 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/_media-queries.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1482.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

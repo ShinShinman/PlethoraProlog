@@ -157,7 +157,17 @@
 }
 
 @media all and (max-height: 460px) {
+	body {
+		justify-content: flex-start;
+		padding-top: 0.5rem;
+	}
+	section.info {
+		overflow: scroll;
+	}
+	/*
 	.flip-device {
 		display: flex;
 	}
+	*/
 }
+
