@@ -2,3 +2,5 @@ node_modules/
 fonts/
 images/*
 js_backup.js
+plethora.sublime-project
+plethora.sublime-workspace
