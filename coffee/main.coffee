@@ -124,4 +124,7 @@ $ ->
 				e.preventDefault()
 				infoObjToggle()
 		)
-	)		
+	)
+
+window.onload = ->
+	$('.preloader').fadeOut()

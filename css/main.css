@@ -42,6 +42,27 @@ body {
   body ::selection {
     background-color: none; }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white url("../images/loader.gif") no-repeat center;
+  background-size: 50px 50px;
+  z-index: 1100; }
+  .preloader progress {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+    .preloader progress::-webkit-progress-bar {
+      background-color: transparent; }
+    .preloader progress::-webkit-progress-value {
+      background-color: grey; }
+
 .nav {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;

@@ -124,6 +124,10 @@
     });
   });
 
+  window.onload = function() {
+    return $('.preloader').fadeOut();
+  };
+
 }).call(this);
 
 //# sourceMappingURL=main.js.map
