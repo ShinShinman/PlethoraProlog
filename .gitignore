@@ -1,6 +1,7 @@
 node_modules/
 fonts/
 images/*
+imagesBAK/*
 js_backup.js
 plethora.sublime-project
 plethora.sublime-workspace
