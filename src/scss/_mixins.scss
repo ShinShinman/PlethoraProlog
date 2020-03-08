@@ -1,0 +1,9 @@
+@function grid-columns($cols){
+	@return ($cols * ($column-width + $gutter)) - $gutter;
+}
+
+@mixin hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}

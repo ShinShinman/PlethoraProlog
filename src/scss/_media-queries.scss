@@ -1,0 +1,173 @@
+/*** MEDIA QUERIES ***/
+
+@media all and (max-width: 1023px) and (min-width: 768px) {}
+
+@media all and (max-width: 767px) {}
+
+@media all and (max-width: 967px) and (min-width: 481px) {
+	.row {
+		width: grid-columns(6);
+	}
+	.app {
+		.counter {
+			.backward-counter {
+				display: none;
+			}
+		}
+		.gallery {
+			.swiper-container.backward {
+				display: none;
+			}
+		}
+		nav {
+		.backward-button {
+				display: none;
+			}
+		}
+	}
+	.info {
+		.layout {
+			> * {
+				margin-left: grid-columns(1);
+			}
+		}
+	}
+}
+
+@media all and (max-width: 480px) and (min-width: 361px) {
+	.row {
+		width: 380px;
+	}
+	.app {
+		.counter {
+			.forward-counter {
+				width: 380px;
+			}
+			.backward-counter {
+				display: none;
+			}
+		}
+		.gallery {
+			.swiper-container {
+				width: 380px;
+				height: 380px;
+				&.backward {
+					display: none;
+				}
+
+				.swiper-slide {
+					width: 380px;
+					height: 380px;
+				}
+
+				.text-column {
+					font-size: 12px;
+					margin-left: auto;
+					margin-right: auto;
+
+					.note {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+		nav {
+			.forward-button {
+				width: 380px;
+			}
+			.backward-button {
+					display: none;
+				}
+		}
+	}
+	section.info {
+		font-size: 12px;
+		.layout {
+			> * {
+				float: none;
+				margin-left: auto;
+				margin-right: auto !important;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 360px) {
+	body {
+		justify-content: flex-start;
+		padding-top: 0.5rem;
+	}
+	.row {
+		width: 320px;
+	}
+	.app {
+		.counter {
+			.forward-counter {
+				width: 320px;
+			}
+			.backward-counter {
+				display: none;
+			}
+		}
+		.gallery {
+			.swiper-container {
+				width: 320px;
+				height: 320px;
+				&.backward {
+					display: none;
+				}
+
+				.swiper-slide {
+					width: 320px;
+					height: 320px;
+				}
+
+				.text-column {
+					width: 310px;
+					font-size: 12px;
+					margin-left: auto;
+					margin-right: auto;
+
+					.note {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+		nav {
+			.forward-button {
+				width: 320px;
+			}
+			.backward-button {
+					display: none;
+				}
+		}
+	}
+	section.info {
+		font-size: 12px;
+		.layout {
+			> * {
+				float: none;
+				width: 310px;
+				margin-left: auto;
+				margin-right: auto !important;
+			}
+		}
+	}
+}
+
+@media all and (max-height: 460px) {
+	body {
+		justify-content: flex-start;
+		padding-top: 0.5rem;
+	}
+	section.info {
+		overflow: scroll;
+	}
+	/*
+	.flip-device {
+		display: flex;
+	}
+	*/
+}
+
