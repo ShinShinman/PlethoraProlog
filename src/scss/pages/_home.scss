@@ -150,8 +150,6 @@ ul {
 		margin-bottom: 12px;
 		.swiper-container {
 			width: 479px;//grid-columns(6);
-			// height: grid-columns(6);
-			//margin-right: $gutter;
 			margin-left: auto;
 			margin-right: auto !important;
 			margin-bottom: $gutter;
@@ -162,9 +160,6 @@ ul {
 			&.forward {
 				cursor: url(../images/arrow-right.svg), auto;
 			}
-			// &.backward {
-			// 	cursor: url(../images/arrow-left.svg), auto;
-			// }
 
 			.swiper-slide {
 				width: 480px;
