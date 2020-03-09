@@ -41,7 +41,8 @@ const filesToMove = [
 	path.js + 'scripts.min.js.map',
 	path.src + 'images/**/*',
 	'./src/index.html',
-	path.src + '*.png'
+	path.src + '*.png',
+	path.src + 'site.webmanifest'
 ];
 
 function scss() {

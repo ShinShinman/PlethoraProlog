@@ -1,0 +1,13 @@
+{
+  "name": "PROLOG",
+  "short_name": "PRLG",
+  "description": "PROLOG proposed an autonomous Building for International Music Centre in the neighbourhood of Park and the Birthplace of Fryderyk Chopin.",
+  "start_url": "/?homescreen=1",
+  "background_color": "#FFFFFF",
+  "theme_color": "#000000",
+  "icons": [{
+    "src": "favicon_196x196.png",
+    "sizes": "196x196",
+    "type": "image/png"
+  }]
+}
