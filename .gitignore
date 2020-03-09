@@ -1,6 +1,6 @@
 node_modules/
 dist/
-fonts/
-images/*
-plethora.sublime-project
-plethora.sublime-workspace
+src/fonts/
+src/images/**/*
+PRLG_2.0.sublime-project
+PRLG_2.0.sublime-workspace

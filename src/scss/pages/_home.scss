@@ -5,7 +5,8 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 
-	font-family: 'Vollkorn', serif;
+	// font-family: 'Vollkorn', serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 
@@ -119,11 +120,12 @@ ul {
 }
 
 .text-column {
-	width: grid-columns(4);
-	margin-top: 2 * $gmb;
-	margin-right: grid-columns(1) + $gutter;
+	width: grid-columns(5);
+	margin-top: $gmb;
+	margin-right: grid-columns(0.5) + $gutter;
 	margin-bottom: 2 * $gmb;
-	margin-left: grid-columns(1) + $gutter;
+	margin-left: grid-columns(0.5) + $gutter;
+	text-align: center;
 	//cursor: text;
 	/*
 	::selection {
@@ -139,7 +141,7 @@ ul {
 
 	.counter {
 		p {
-			width: grid-columns(6);
+			// width: grid-columns(6);
 			margin-right: $gutter;
 			text-align: center;
 		}
@@ -148,22 +150,25 @@ ul {
 		margin-bottom: 12px;
 		.swiper-container {
 			width: 479px;//grid-columns(6);
-			height: grid-columns(6);
+			// height: grid-columns(6);
 			//margin-right: $gutter;
+			margin-left: auto;
+			margin-right: auto !important;
 			margin-bottom: $gutter;
-			overflow: hidden;
+			float: none;
+			// overflow: hidden;
 			position: relative;
 
 			&.forward {
 				cursor: url(../images/arrow-right.svg), auto;
 			}
-			&.backward {
-				cursor: url(../images/arrow-left.svg), auto;
-			}
+			// &.backward {
+			// 	cursor: url(../images/arrow-left.svg), auto;
+			// }
 
 			.swiper-slide {
 				width: 480px;
-				height: 480px;
+				height: 560px;
 
 				&.first-slide {
 					text-align: center;
@@ -181,9 +186,9 @@ ul {
 
 			img {
 				width: 100%;
-				vertical-align: baseline;
-				position: absolute;
-				top: 0;
+				vertical-align: bottom;
+				// position: absolute;
+				// top: 0;
 				background-color: white;
 			}
 		}
@@ -194,6 +199,14 @@ ul {
 			height: 21px;
 			margin-right: $gutter;
 		}
+	}
+	.description {
+		font-family: 'Roboto', sans-serif;
+		font-size: 10px;
+		line-height: 1.5;
+		width: grid-columns(6);
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 

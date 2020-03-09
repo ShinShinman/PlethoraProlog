@@ -7,6 +7,7 @@ const rename = require('gulp-rename');
 const coffee = require('gulp-coffee');
 const include = require('gulp-include');
 const uglfly = require('gulp-uglyfly');
+const terser = require('gulp-terser');
 const replace = require('gulp-replace');
 const browserSync = require('browser-sync').create();
 const packageInfo = require('./package.json');
@@ -18,7 +19,7 @@ sass.compiler = require('node-sass');
 2. dodać default task ✓
 3. dodać funkcję build ✓
 4. dodać zadanie Cache Bust ✓
-5. zamienić uglyfly na terser 
+5. zamienić uglyfly na terser ✓
 	[https://www.npmjs.com/package/terser]
 6. zamienić gulp-sourcemaps na opcję wbudowaną
 	[https://gulpjs.com/docs/en/api/src#sourcemaps]
@@ -37,7 +38,8 @@ const filesToMove = [
 	path.css + 'main.min.css', 
 	path.css + 'main.min.css.map', 
 	path.js + 'scripts.min.js', 
-	path.js + 'scripts.min.js.map', 
+	path.js + 'scripts.min.js.map',
+	path.src + 'images/**/*',
 	'./src/index.html',
 	path.src + '*.png'
 ];
@@ -75,7 +77,7 @@ function js() {
 	return src(path.js + 'components.js')
 		.pipe(sourcemaps.init())
 		.pipe(include().on('error', console.log))
-		.pipe(uglfly())
+		.pipe(terser())
 		.pipe(rename('scripts.min.js'))
 		.pipe(sourcemaps.write('./'))
 		.pipe(dest(path.js))
@@ -124,6 +126,7 @@ function moveFiles() {
 exports.default = defaultTask;
 exports.cacheBust = cacheBust;
 exports.serve = serve;
+exports.moveFiles = moveFiles;
 exports.dev = series(
 	parallel(
 		series(scss, css),
@@ -140,6 +143,3 @@ exports.build = series(
 	cacheBust,
 	moveFiles
 );
-
-exports.cs = coffeeScript;
-exports.js = js;

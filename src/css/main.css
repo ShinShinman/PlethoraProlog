@@ -33,7 +33,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
   height: 100vh;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.5; }
   body ::-moz-selection {
@@ -122,11 +122,12 @@ ul {
   margin-bottom: 21px; }
 
 .text-column {
-  width: 314.66667px;
-  margin-top: 42px;
-  margin-right: 81.16667px;
+  width: 395.83333px;
+  margin-top: 21px;
+  margin-right: 40.58333px;
   margin-bottom: 42px;
-  margin-left: 81.16667px;
+  margin-left: 40.58333px;
+  text-align: center;
   /*
 	::selection {
 		background-color: $malina;
@@ -137,24 +138,22 @@ ul {
 .app {
   margin-bottom: 48px; }
   .app .counter p {
-    width: 477px;
     margin-right: 10px;
     text-align: center; }
   .app .gallery {
     margin-bottom: 12px; }
     .app .gallery .swiper-container {
       width: 479px;
-      height: 477px;
+      margin-left: auto;
+      margin-right: auto !important;
       margin-bottom: 10px;
-      overflow: hidden;
+      float: none;
       position: relative; }
       .app .gallery .swiper-container.forward {
         cursor: url(../images/arrow-right.svg), auto; }
-      .app .gallery .swiper-container.backward {
-        cursor: url(../images/arrow-left.svg), auto; }
       .app .gallery .swiper-container .swiper-slide {
         width: 480px;
-        height: 480px; }
+        height: 560px; }
         .app .gallery .swiper-container .swiper-slide.first-slide {
           text-align: center;
           display: flex;
@@ -164,14 +163,19 @@ ul {
             transform: scaleX(-1); }
       .app .gallery .swiper-container img {
         width: 100%;
-        vertical-align: baseline;
-        position: absolute;
-        top: 0;
+        vertical-align: bottom;
         background-color: white; }
   .app nav button {
     width: 477px;
     height: 21px;
     margin-right: 10px; }
+  .app .description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    width: 477px;
+    margin-right: auto;
+    margin-left: auto; }
 
 section.info {
   font-family: 'Roboto', sans-serif;
