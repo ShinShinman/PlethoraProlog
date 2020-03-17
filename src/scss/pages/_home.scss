@@ -5,9 +5,11 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 
+	background-color: rgb(234, 235, 237);
+
 	// font-family: 'Vollkorn', serif;
 	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.5;
 
 	::selection {
@@ -120,11 +122,12 @@ ul {
 }
 
 .text-column {
+	display: none;
 	width: grid-columns(5);
 	margin-top: $gmb;
-	margin-right: grid-columns(0.5) + $gutter;
-	margin-bottom: 2 * $gmb;
-	margin-left: grid-columns(0.5) + $gutter;
+	margin-right: auto;
+	margin-bottom: $gmb;
+	margin-left: auto;
 	text-align: center;
 	//cursor: text;
 	/*
@@ -137,12 +140,23 @@ ul {
 
 .app {
 
+	margin-top: 24px;
 	margin-bottom: 48px;
 
 	.counter {
 		p {
 			// width: grid-columns(6);
 			margin-right: $gutter;
+			text-align: center;
+		}
+	}
+
+	.prolog {
+		p {
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 0.05em;
+			width: 100%;
 			text-align: center;
 		}
 	}
@@ -158,10 +172,28 @@ ul {
 			position: relative;
 
 			&.forward {
-				cursor: url(../images/arrow-right.svg), auto;
+				
+			}
+
+			.button {
+				position: absolute;
+				top: 0;
+				width: 50%;
+				height: 100%;
+				z-index: 10;
+
+				&.rew {
+					cursor: url(../images/arrow-left.svg), pointer;
+				}
+
+				&.ff {
+					left: 50%;
+					cursor: url(../images/arrow-right.svg), pointer;
+				}
 			}
 
 			.swiper-slide {
+
 				width: 480px;
 				height: 560px;
 
@@ -214,7 +246,7 @@ section.info {
 	overflow: hidden;
 	width: 100%;
 	height: 2.5rem;
-	background-color: white;
+	background-color: rgb(234, 235, 237);
 	z-index: 1000;
 
 	.trigger {

@@ -37,7 +37,7 @@
       $.each(data.slides, function(key, slide) {
         var slideTemplate;
         slideTemplate = `<div class="swiper-slide">
-	<img src="images/${slide.image}_480.png" alt="" srcset="images/${slide.image}_480.png 1x, images/${slide.image}_960.png 2x, images/${slide.image}_1440.png 3x">
+	<img src="images/${slide.image}_x1.png" alt="" srcset="images/${slide.image}_x1.png 1x, images/${slide.image}_x2.png 2x, images/${slide.image}_x3.png 3x">
 	<div class="text-column">
 		<p>${slide.description}</p>
 	</div>
@@ -58,9 +58,20 @@
         pagination: {
           el: '.counter .forward-counter',
           type: 'fraction'
+        },
+        on: {
+          transitionStart: function() {
+            return $('.swiper-slide-active .text-column').hide();
+          },
+          transitionEnd: function() {
+            return $('.swiper-slide-active .text-column').fadeIn();
+          }
         }
       });
-      $('.forward .swiper-wrapper .swiper-slide').click(function() {
+      $('.swiper-container .button.rew').click(function() {
+        return forwardSwiper.slidePrev();
+      });
+      $('.swiper-container .button.ff').click(function() {
         return forwardSwiper.slideNext();
       });
       if ($(window).width() < 968) {

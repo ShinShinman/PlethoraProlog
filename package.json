@@ -1,6 +1,7 @@
 {
   "name": "PlethoraApp",
-  "version": "2.0.0",
+  "version": "2.0.1",
+  "versionMessage": "Poprawki z maila",
   "description": "Plethora minisite",
   "main": "index.html",
   "scripts": {

@@ -6,7 +6,6 @@ const cleanCss = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const coffee = require('gulp-coffee');
 const include = require('gulp-include');
-const uglfly = require('gulp-uglyfly');
 const terser = require('gulp-terser');
 const replace = require('gulp-replace');
 const browserSync = require('browser-sync').create();
@@ -86,7 +85,7 @@ function js() {
 }
 
 function cacheBust() {
-	console.log(`Wersja strony ${packageInfo.version},\n${packageInfo.description}`);
+	console.log(`Wersja strony ${packageInfo.version},\n${packageInfo.versionMessage}`);
 	return src(path.src + 'index.html')
 		.pipe(replace(/v=[\d+\.*]+/g, 'v=' + packageInfo.version))
 		.pipe(dest(path.src));
