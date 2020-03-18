@@ -1,7 +1,7 @@
 {
   "name": "PlethoraApp",
-  "version": "2.0.2",
-  "versionMessage": "Poprawione ściezki do plików favicon",
+  "version": "2.0.3",
+  "versionMessage": "Jedna kolumna w Info i powrót licznika",
   "description": "Plethora minisite",
   "main": "index.html",
   "scripts": {

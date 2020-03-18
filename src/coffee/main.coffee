@@ -22,8 +22,8 @@ $ ->
 		else
 			infoObj.mode = 'expanded';
 			infoObj.trg.animate({
-				height: '100vh',
-				paddingTop: '3.5rem'
+				height: '95vh',
+				paddingTop: '2.5rem'
 			}, 1000);
 			infoTrigger.closeBtn.show();
 
