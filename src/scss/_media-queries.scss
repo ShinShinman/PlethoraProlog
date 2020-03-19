@@ -111,6 +111,11 @@
 	.row {
 		width: 320px;
 	}
+	.title {
+		h1.prolog {
+			width: 320px;
+		}
+	}
 	.app {
 		.counter {
 			.forward-counter {
@@ -156,6 +161,12 @@
 	}
 	section.info {
 		font-size: 12px;
+
+		.nav {
+			button {
+				width: 320px;
+			}
+		}
 		.layout {
 			> * {
 				float: none;

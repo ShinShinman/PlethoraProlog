@@ -273,7 +273,7 @@ section.info {
 	}
 
 	.trigger {
-		margin-bottom: $gmb * 1;
+		margin-bottom: $gmb;
 		button {
 			display: block;
 			position: relative;
@@ -283,19 +283,19 @@ section.info {
 			&:hover {
 				color: black;
 			}
-			.close {
-				width: 10px;
-				font-weight: bold;
-				text-align: center;
-				color: black;
-				position: absolute;
-				top: 0;
-				right: 10px;
-				display: none;
-				&:hover {
-					color: $malina;
-				}
-			}
+			// .close {
+			// 	width: 10px;
+			// 	font-weight: bold;
+			// 	text-align: center;
+			// 	color: black;
+			// 	position: absolute;
+			// 	top: 0;
+			// 	right: 10px;
+			// 	display: none;
+			// 	&:hover {
+			// 		color: $malina;
+			// 	}
+			// }
 		}
 	}
 
