@@ -1,7 +1,7 @@
 {
   "name": "PlethoraApp",
-  "version": "2.0.5",
-  "versionMessage": "Zmiana nazwy pliku ze slajdami",
+  "version": "2.0.6",
+  "versionMessage": "Czyszczenie folderu dist",
   "description": "Plethora minisite",
   "main": "index.html",
   "scripts": {
@@ -15,6 +15,7 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-coffee": "^3.0.3",
     "gulp-include": "^2.4.1",

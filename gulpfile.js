@@ -9,6 +9,9 @@ const include = require('gulp-include');
 const terser = require('gulp-terser');
 const replace = require('gulp-replace');
 const browserSync = require('browser-sync').create();
+const clean = require('gulp-clean');
+const fs = require('fs');
+
 const packageInfo = require('./package.json');
 
 sass.compiler = require('node-sass');
@@ -22,6 +25,7 @@ sass.compiler = require('node-sass');
 	[https://www.npmjs.com/package/terser]
 6. zamienić gulp-sourcemaps na opcję wbudowaną
 	[https://gulpjs.com/docs/en/api/src#sourcemaps]
+7. Usunąć stare pliki z dist przed skopiowaniem plików
 **********************************************************/
 
 let path = {
@@ -123,6 +127,21 @@ function moveFiles() {
 		.pipe(dest(path.dist))
 }
 
+function cleanDist(cb) {
+	fs.access(path.dist, (err) => {
+		if (err) {
+			console.log(err);
+			cb();
+		} else {
+			src(path.dist, {read: false})
+			.pipe(clean());
+			cb();
+		}
+	})
+}
+
+exports.cleanDist = cleanDist;
+
 exports.default = defaultTask;
 exports.cacheBust = cacheBust;
 exports.serve = serve;
@@ -136,6 +155,7 @@ exports.dev = series(
 	bigBrother
 );
 exports.build = series(
+	cleanDist,
 	parallel(
 		series(scss, css),
 		series(coffeeScript, js)
