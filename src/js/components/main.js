@@ -31,7 +31,7 @@
     infoTrigger.trg.click(function(e) {
       return infoObjToggle();
     });
-    return $.getJSON('ajax/slaids.json', function(data) {
+    return $.getJSON('ajax/slides.json', function(data) {
       var allFWImgs, allImgs, forwardSwiper, slides, swiperOptions;
       slides = [];
       $.each(data.slides, function(key, slide) {

@@ -1,7 +1,7 @@
 {
   "name": "PlethoraApp",
-  "version": "2.0.4",
-  "versionMessage": "Poprawki z maila, cz. 3",
+  "version": "2.0.5",
+  "versionMessage": "Zmiana nazwy pliku ze slajdami",
   "description": "Plethora minisite",
   "main": "index.html",
   "scripts": {

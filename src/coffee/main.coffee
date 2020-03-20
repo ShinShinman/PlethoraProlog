@@ -31,7 +31,7 @@ $ ->
 		infoObjToggle();
 	)
 
-	$.getJSON('ajax/slaids.json', (data) ->
+	$.getJSON('ajax/slides.json', (data) ->
 		slides = []
 		$.each data.slides, (key, slide) ->
 			slideTemplate = """

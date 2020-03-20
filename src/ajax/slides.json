@@ -1,7 +1,7 @@
 {"slides": [
 	{
-		"image": "01",
-		"description": "In architecture, for us: no newness"},
+		"image": "01", // nazwa pliku bez suffixu
+		"description": "In architecture, for us: no newness"}, // opis pod obrazkiem
 	{
 		"image": "02",
 		"description": "The project is conceived as a superimposition of radically different autonomous spaces. "},
