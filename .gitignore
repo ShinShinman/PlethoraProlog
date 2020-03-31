@@ -1,6 +1,11 @@
+dist/images/*
+!dist/images/*.svg
+!dist/images/loader.gif
 node_modules/
-dist/
+src/css/*
 src/fonts/
 src/images/**/*
+src/js/**/*
+!src/js/components.js
 PRLG_2.0.sublime-project
 PRLG_2.0.sublime-workspace
