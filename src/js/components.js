@@ -1,2 +1,2 @@
-//=require ../../node_modules/swiper/dist/js/swiper.min.js
+//=require ../../node_modules/swiper/swiper-bundle.min.js
 //=require components/main.js
