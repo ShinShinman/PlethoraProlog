@@ -1,5 +1,5 @@
 const { src, dest, watch, series, parallel } = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
@@ -38,9 +38,9 @@ let path = {
 };
 const filesToMove = [
 	path.src + 'ajax/**/*.json',
-	path.css + 'main.min.css', 
-	path.css + 'main.min.css.map', 
-	path.js + 'scripts.min.js', 
+	path.css + 'main.min.css',
+	path.css + 'main.min.css.map',
+	path.js + 'scripts.min.js',
 	path.js + 'scripts.min.js.map',
 	path.src + 'images/**/*',
 	'./src/index.html',
