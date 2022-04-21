@@ -4,34 +4,56 @@ $ ->
 
 	infoObj = {
 		trg: $('section.info'),
-		mode: 'colapsed'
+		mode: 'collapsed',
+		stage: 'none'
 	}
 	infoTrigger = {
 		trg: infoObj.trg.find('.trigger button'),
-		closeBtn: infoObj.trg.find('.trigger button .close')
+		closeBtn: infoObj.trg.find('.layout button.closeBtn')
 	}
-	
-	infoObjToggle = () ->
-		if infoObj.mode == 'expanded'
-			infoObj.mode = 'colapsed'
+	app = $('section.app')
+
+	infoObjToggle = (target) ->
+		if infoObj.mode == 'expanded' and infoObj.stage == target
+			infoObj.mode = 'collapsed'
+			infoObj.stage = 'none'
+			app.show()
 			infoObj.trg.animate({
-				height: '2.5rem',
+				height: '0rem',
 				paddingTop: 0
-			}, 'slow')
-			infoTrigger.closeBtn.hide()
+			}, 'slow', () ->
+					infoObj.trg.find('.layout.' + target).addClass('hidden')
+					infoObj.trg.find('.layout').hide()
+			)
+		else if infoObj.mode == 'expanded' and infoObj.stage isnt target
+			infoObj.trg.find('.layout.' + infoObj.stage).addClass('hidden').hide()
+			infoObj.trg.find('.layout.' + target).show()
+			infoObj.stage = target
+			setTimeout () ->
+				infoObj.trg.find('.layout.' + target).removeClass 'hidden'
+			, 100
 		else
-			infoObj.mode = 'expanded';
+			infoObj.mode = 'expanded'
+			infoObj.stage = target
+			infoObj.trg.find('.layout.' + target).show()
 			infoObj.trg.animate({
-				height: '95vh',
-				paddingTop: '2.5rem'
-			}, 1000);
-			infoTrigger.closeBtn.show();
+				height: '90vh'
+			}, 1000, () ->
+				app.hide()
+				infoObj.trg.find('.layout.' + target).removeClass('hidden')
+			)
+			# infoTrigger.closeBtn.show();
 
 	infoTrigger.trg.click((e) ->
-		infoObjToggle();
+		# infoObj.stage = e.target.classList.value
+		infoObjToggle e.target.classList.value
+	)
+	infoTrigger.closeBtn.click((e) ->
+		console.log infoObj.stage
+		infoObjToggle infoObj.stage
 	)
 
-	$.getJSON('ajax/slides.json', (data) ->
+	$.getJSON('./ajax/slides.json', (data) ->
 		slides = []
 		$.each data.slides, (key, slide) ->
 			slideTemplate = """
@@ -68,10 +90,10 @@ $ ->
 					$('.swiper-slide-active .text-column').fadeIn()
 			}
 		})
-		$('.swiper-container .button.rew').click( () -> 
+		$('.swiper-container .button.rew').click( () ->
 			forwardSwiper.slidePrev()
 		)
-		$('.swiper-container .button.ff').click( () -> 
+		$('.swiper-container .button.ff').click( () ->
 			forwardSwiper.slideNext()
 		)
 

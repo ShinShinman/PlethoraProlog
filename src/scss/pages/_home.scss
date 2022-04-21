@@ -184,11 +184,11 @@ ul {
 			margin-right: auto !important;
 			margin-bottom: $gutter;
 			float: none;
-			// overflow: hidden;
+			overflow: hidden;
 			position: relative;
 
 			&.forward {
-				
+
 			}
 
 			.button {
@@ -265,6 +265,7 @@ section.info {
 	background-color: rgb(234, 235, 237);
 	z-index: 1000;
 
+
 	.row > * {
 		float: none;
 		margin-left: auto;
@@ -276,12 +277,36 @@ section.info {
 		margin-bottom: $gmb;
 		button {
 			display: block;
-			position: relative;
+			position: fixed;
 			color: $malina;
 			font-weight: bold;
+			background-color: rgb(234, 235, 237);
 			line-height: 2.5rem;
+
 			&:hover {
 				color: black;
+			}
+
+			&.contact {
+				bottom: 0;
+				right: 0;
+				width: 100vw;
+			}
+			&.projects {
+				position: fixed;
+				top: 100vh;
+				left: 0;
+				width: 100vh;
+				transform: rotate(270deg);
+				transform-origin: top left;
+			}
+			&.about {
+				position: fixed;
+				top: 100vh;
+				right: 0;
+				width: 100vh;
+				transform: rotate(90deg);
+				transform-origin: top right;
 			}
 			// .close {
 			// 	width: 10px;
@@ -299,19 +324,63 @@ section.info {
 		}
 	}
 
+	// .layout::-webkit-scrollbar {
+	// 	width: 0;
+	// 	height: 0;
+	// }
 	.layout {
+		padding-bottom: 50px;
+		margin-bottom: 100px;
+		height: calc(90vh - 160px);
+
+		transition: transform .5s ease-out;
+
 		h1 {
 			margin-bottom: 0;
 		}
 		> * {
 			width: grid-columns(4);
-			margin-right: $gutter;
+		}
+
+		&.hidden {
+			display: none;
+			visibility: hidden;
+
+			&.contact {
+				transform: translate(0, 100px);
+			}
+			&.projects {
+				transform: translate(-100px, 0);
+			}
+			&.about {
+				transform: translate(100px, 0);
+			}
+		}
+
+		// SCROLLBAR
+		scrollbar-width: 5px;
+		scrollbar-color: #c7c7c7 #f1f1f1;
+		&::-webkit-scrollbar {
+			background-color: #f1f1f1;
+			width: 5px;
+		}
+		&::-webkit-scrollbar-thumb {
+		  background-color: #c7c7c7;
+		}
+
+		// 	CLOSE BUTTON
+		button.closeBtn {
+			width: 50px;
+			float: right;
 		}
 	}
 	.about {}
 	.contact {}
 	.manual {}
+
 }
+
+
 
 .flip-device {
 	font-family: 'Roboto', sans-serif;
@@ -335,4 +404,3 @@ section.info {
 		margin-right: auto;
 	}
 }
-
