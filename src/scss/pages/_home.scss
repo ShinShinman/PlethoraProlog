@@ -324,10 +324,6 @@ section.info {
 		}
 	}
 
-	// .layout::-webkit-scrollbar {
-	// 	width: 0;
-	// 	height: 0;
-	// }
 	.layout {
 		padding-bottom: 50px;
 		margin-bottom: 100px;
@@ -336,10 +332,35 @@ section.info {
 		transition: transform .5s ease-out;
 
 		h1 {
-			margin-bottom: 0;
+			text-align: center;
+			text-transform: none;
+			font-weight: bold;
+			color: $malina;
+			margin-bottom: $gmb * 3;
 		}
 		> * {
 			width: grid-columns(4);
+		}
+
+		h2 {
+			text-transform: uppercase;
+			font-weight: 400;
+			letter-spacing: 0.05rem;
+			margin-top: 2 * $gmb;
+		}
+
+		// Description list
+		dl {
+		  dt {
+
+		  }
+		  dd {
+		    margin-left: (grid-columns(1) / 2) + $gutter;
+
+				&.comment {
+					font-style: italic;
+				}
+		  }
 		}
 
 		&.hidden {
@@ -372,6 +393,12 @@ section.info {
 		button.closeBtn {
 			width: 50px;
 			float: right;
+		}
+
+		article {
+			section {
+				margin-bottom: $gmb * 2;
+			}
 		}
 	}
 	.about {}

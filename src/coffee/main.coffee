@@ -13,6 +13,13 @@ $ ->
 	}
 	app = $('section.app')
 
+	### PANELE ###
+	panels = {
+		projects: infoObj.trg.find('article.projects'),
+		contact: infoObj.trg.find('article.contact'),
+		about: infoObj.trg.find('article.about')
+	}
+
 	infoObjToggle = (target) ->
 		if infoObj.mode == 'expanded' and infoObj.stage == target
 			infoObj.mode = 'collapsed'
@@ -42,14 +49,11 @@ $ ->
 				app.hide()
 				infoObj.trg.find('.layout.' + target).removeClass('hidden')
 			)
-			# infoTrigger.closeBtn.show();
 
 	infoTrigger.trg.click((e) ->
-		# infoObj.stage = e.target.classList.value
 		infoObjToggle e.target.classList.value
 	)
 	infoTrigger.closeBtn.click((e) ->
-		console.log infoObj.stage
 		infoObjToggle infoObj.stage
 	)
 
@@ -117,6 +121,48 @@ $ ->
 				e.preventDefault()
 				infoObjToggle()
 		)
+	)
+
+	projectTemplate = (project) ->
+		"""
+			<dl>
+		    <dt>#{project.title}</dt>
+		    <dd class="authors">#{project.paragraph}</dd>
+		    <dd class="place">#{project.place}</dd>
+		    <dd class="award">#{project.award}</dd>
+		    <dd class="comment">#{project.comment}</dd>
+		  </dl>
+		"""
+
+	aboutTemplate = (about) ->
+		"""
+			<dl>
+		    <dt>#{about.title}</dt>
+		    <dd class="paragraph">#{about.paragraph}</dd>
+		    <dd class="place">#{about.place}</dd>
+		    <dd class="award">#{about.award}</dd>
+		    <dd class="comment">#{about.comment}</dd>
+		  </dl>
+		"""
+
+	$.getJSON('./ajax/projects.json', (data) ->
+		headersSet = new Set
+		$.each data.projects, (key, project) ->
+			if !(headersSet.has(project.header))
+				headersSet.add project.header
+				panels.projects.append """<h2>#{project.header}</h2>"""
+
+			panels.projects.append projectTemplate project
+	)
+
+	$.getJSON('./ajax/about.json', (data) ->
+		headersSet = new Set
+		$.each data.about, (key, article) ->
+			if !(headersSet.has(article.header))
+				headersSet.add article.header
+				panels.about.append """<h2>#{article.header}</h2>"""
+
+			panels.about.append aboutTemplate article
 	)
 
 window.onload = ->
