@@ -5,7 +5,7 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 
-	background-color: rgb(234, 235, 237);
+	background-color: $backgroundColor;
 
 	// font-family: 'Vollkorn', serif;
 	font-family: 'Roboto', sans-serif;
@@ -262,7 +262,7 @@ section.info {
 	overflow: hidden;
 	width: 100%;
 	height: 2.5rem;
-	background-color: rgb(234, 235, 237);
+	background-color: $backgroundColor;
 	z-index: 1000;
 
 
@@ -274,13 +274,12 @@ section.info {
 	}
 
 	.trigger {
-		margin-bottom: $gmb;
 		button {
 			display: block;
 			position: fixed;
 			color: $malina;
 			font-weight: bold;
-			background-color: rgb(234, 235, 237);
+			background-color: $backgroundColor;
 			line-height: 2.5rem;
 
 			&:hover {
@@ -308,19 +307,6 @@ section.info {
 				transform: rotate(90deg);
 				transform-origin: top right;
 			}
-			// .close {
-			// 	width: 10px;
-			// 	font-weight: bold;
-			// 	text-align: center;
-			// 	color: black;
-			// 	position: absolute;
-			// 	top: 0;
-			// 	right: 10px;
-			// 	display: none;
-			// 	&:hover {
-			// 		color: $malina;
-			// 	}
-			// }
 		}
 	}
 
@@ -336,7 +322,12 @@ section.info {
 			text-transform: none;
 			font-weight: bold;
 			color: $malina;
-			margin-bottom: $gmb * 3;
+			background-color: $backgroundColor;
+			padding-bottom: $gmb;
+			margin-top: 0;
+			margin-bottom: $gmb * 1;
+			position: sticky;
+			top: 0;
 		}
 		> * {
 			width: grid-columns(4);
@@ -378,6 +369,14 @@ section.info {
 			}
 		}
 
+		//SIDENAV
+		nav.sidenav {
+			width: grid-columns(2);
+			float: right;
+			position: sticky;
+			top: 81px;
+		}
+
 		// SCROLLBAR
 		scrollbar-width: 5px;
 		scrollbar-color: #c7c7c7 #f1f1f1;
@@ -393,6 +392,8 @@ section.info {
 		button.closeBtn {
 			width: 50px;
 			float: right;
+			position: sticky;
+			top: 0;
 		}
 
 		article {

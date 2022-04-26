@@ -16,8 +16,9 @@ $ ->
 	### PANELE ###
 	panels = {
 		projects: infoObj.trg.find('article.projects'),
-		contact: infoObj.trg.find('article.contact'),
-		about: infoObj.trg.find('article.about')
+		projectsSidenav: infoObj.trg.find('article.projects nav.sidenav ul'),
+		about: infoObj.trg.find('article.about'),
+		aboutSidenav: infoObj.trg.find('article.about nav.sidenav ul')
 	}
 
 	infoObjToggle = (target) ->
@@ -35,9 +36,13 @@ $ ->
 		else if infoObj.mode == 'expanded' and infoObj.stage isnt target
 			infoObj.trg.find('.layout.' + infoObj.stage).addClass('hidden').hide()
 			infoObj.trg.find('.layout.' + target).show()
+			# $('article.about h2')
 			infoObj.stage = target
 			setTimeout () ->
 				infoObj.trg.find('.layout.' + target).removeClass 'hidden'
+				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
+					$('.layout').scrollTop 0
+					$(i).data('pos', Math.round $(i).offset().top - 181 )
 			, 100
 		else
 			infoObj.mode = 'expanded'
@@ -48,6 +53,9 @@ $ ->
 			}, 1000, () ->
 				app.hide()
 				infoObj.trg.find('.layout.' + target).removeClass('hidden')
+				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
+					$('.layout').scrollTop 0
+					$(i).data('pos', Math.round $(i).offset().top - 181 )
 			)
 
 	infoTrigger.trg.click((e) ->
@@ -123,25 +131,14 @@ $ ->
 		)
 	)
 
-	projectTemplate = (project) ->
+	infoTemplate = (item) ->
 		"""
 			<dl>
-		    <dt>#{project.title}</dt>
-		    <dd class="authors">#{project.paragraph}</dd>
-		    <dd class="place">#{project.place}</dd>
-		    <dd class="award">#{project.award}</dd>
-		    <dd class="comment">#{project.comment}</dd>
-		  </dl>
-		"""
-
-	aboutTemplate = (about) ->
-		"""
-			<dl>
-		    <dt>#{about.title}</dt>
-		    <dd class="paragraph">#{about.paragraph}</dd>
-		    <dd class="place">#{about.place}</dd>
-		    <dd class="award">#{about.award}</dd>
-		    <dd class="comment">#{about.comment}</dd>
+		    <dt>#{item.title}</dt>
+		    <dd class="paragraph">#{item.paragraph}</dd>
+		    <dd class="place">#{item.place}</dd>
+		    <dd class="award">#{item.award}</dd>
+		    <dd class="comment">#{item.comment}</dd>
 		  </dl>
 		"""
 
@@ -150,9 +147,13 @@ $ ->
 		$.each data.projects, (key, project) ->
 			if !(headersSet.has(project.header))
 				headersSet.add project.header
-				panels.projects.append """<h2>#{project.header}</h2>"""
+				panels.projects.append "<h2 id=#{project.header}>#{project.header}</h2>"
+				$('.projects nav.sidenav ul').append("<li><a href=##{project.header}>#{project.header}</a></li>")
 
-			panels.projects.append projectTemplate project
+			panels.projects.append infoTemplate project
+
+		$('nav.sidenav a').click (e) ->
+			scrollTo($(e.target).attr 'href')
 	)
 
 	$.getJSON('./ajax/about.json', (data) ->
@@ -160,10 +161,21 @@ $ ->
 		$.each data.about, (key, article) ->
 			if !(headersSet.has(article.header))
 				headersSet.add article.header
-				panels.about.append """<h2>#{article.header}</h2>"""
+				panels.about.append "<h2 id=#{article.header}>#{article.header}</h2>"
+				$('.about nav.sidenav ul').append("<li><a href=##{article.header}>#{article.header}</a></li>")
 
-			panels.about.append aboutTemplate article
+			panels.about.append infoTemplate article
+
+		$('nav.sidenav a').click (e) ->
+			scrollTo($(e.target).attr 'href')
 	)
+
+	# MAŁE MENU W PANELU (NAGŁOWKI H2)
+	scrollTo = (bookmark) ->
+		$('.layout').animate({
+			scrollTop: $("h2#{bookmark}").data 'pos'
+		}, 500)
+
 
 window.onload = ->
 	$('.preloader').fadeOut()
