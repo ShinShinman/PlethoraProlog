@@ -388,6 +388,17 @@ section.info {
 		  background-color: #c7c7c7;
 		}
 
+		&.camo {
+			scrollbar-width: 5px;
+			scrollbar-color: $backgroundColor;
+		}
+		&.camo::-webkit-scrollbar {
+			background-color: $backgroundColor;
+		}
+		&.camo::-webkit-scrollbar-thumb {
+			background-color: $backgroundColor;
+		}
+
 		// 	CLOSE BUTTON
 		button.closeBtn {
 			width: 50px;

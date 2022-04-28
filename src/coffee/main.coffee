@@ -22,6 +22,7 @@ $ ->
 	}
 
 	infoObjToggle = (target) ->
+		targetObj = infoObj.trg.find '.layout.' + target
 		if infoObj.mode == 'expanded' and infoObj.stage == target
 			infoObj.mode = 'collapsed'
 			infoObj.stage = 'none'
@@ -30,32 +31,37 @@ $ ->
 				height: '0rem',
 				paddingTop: 0
 			}, 'slow', () ->
-					infoObj.trg.find('.layout.' + target).addClass('hidden')
+					targetObj.addClass('hidden camo')
 					infoObj.trg.find('.layout').hide()
 			)
 		else if infoObj.mode == 'expanded' and infoObj.stage isnt target
-			infoObj.trg.find('.layout.' + infoObj.stage).addClass('hidden').hide()
-			infoObj.trg.find('.layout.' + target).show()
-			# $('article.about h2')
+			infoObj.trg.find('.layout.' + infoObj.stage).addClass('hidden camo').hide()
+			targetObj.show()
 			infoObj.stage = target
 			setTimeout () ->
-				infoObj.trg.find('.layout.' + target).removeClass 'hidden'
+				targetObj.removeClass 'hidden'
+				targetObj.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', (e) ->
+					$(this).removeClass 'camo'
+				)
 				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
 					$('.layout').scrollTop 0
-					$(i).data('pos', Math.round $(i).offset().top - 181 )
+					$(i).data('pos', Math.round $(i).offset().top - 160 )
 			, 100
 		else
 			infoObj.mode = 'expanded'
 			infoObj.stage = target
-			infoObj.trg.find('.layout.' + target).show()
+			targetObj.show()
 			infoObj.trg.animate({
 				height: '90vh'
 			}, 1000, () ->
 				app.hide()
-				infoObj.trg.find('.layout.' + target).removeClass('hidden')
+				targetObj.removeClass('hidden')
+				targetObj.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', (e) ->
+					$(this).removeClass 'camo'
+				)
 				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
 					$('.layout').scrollTop 0
-					$(i).data('pos', Math.round $(i).offset().top - 181 )
+					$(i).data('pos', Math.round $(i).offset().top - 160 )
 			)
 
 	infoTrigger.trg.click((e) ->
@@ -148,12 +154,12 @@ $ ->
 			if !(headersSet.has(project.header))
 				headersSet.add project.header
 				panels.projects.append "<h2 id=#{project.header}>#{project.header}</h2>"
-				$('.projects nav.sidenav ul').append("<li><a href=##{project.header}>#{project.header}</a></li>")
+				$('.projects nav.sidenav ul').append("<li><a data-target=projects href=##{project.header}>#{project.header}</a></li>")
 
 			panels.projects.append infoTemplate project
 
-		$('nav.sidenav a').click (e) ->
-			scrollTo($(e.target).attr 'href')
+		$('.projects nav.sidenav a').click (e) ->
+			scrollTo($(e.target).attr('href'), $(e.target).data('target'))
 	)
 
 	$.getJSON('./ajax/about.json', (data) ->
@@ -162,17 +168,18 @@ $ ->
 			if !(headersSet.has(article.header))
 				headersSet.add article.header
 				panels.about.append "<h2 id=#{article.header}>#{article.header}</h2>"
-				$('.about nav.sidenav ul').append("<li><a href=##{article.header}>#{article.header}</a></li>")
+				$('.about nav.sidenav ul').append("<li><a data-target=about href=##{article.header}>#{article.header}</a></li>")
 
 			panels.about.append infoTemplate article
 
-		$('nav.sidenav a').click (e) ->
-			scrollTo($(e.target).attr 'href')
+		$('.about nav.sidenav a').click (e) ->
+			e.preventDefault()
+			scrollTo($(e.target).attr('href'), $(e.target).data('target'))
 	)
 
 	# MAŁE MENU W PANELU (NAGŁOWKI H2)
-	scrollTo = (bookmark) ->
-		$('.layout').animate({
+	scrollTo = (bookmark, target) ->
+		$('.layout.' + target).animate({
 			scrollTop: $("h2#{bookmark}").data 'pos'
 		}, 500)
 
