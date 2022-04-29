@@ -25,10 +25,15 @@
 			}
 		}
 	}
-	.info {
+	section.info {
 		.layout {
+			padding-bottom: 150px;
+
 			> * {
 				margin-left: grid-columns(1);
+			}
+			nav.sidenav {
+				display: none;
 			}
 		}
 	}
@@ -88,16 +93,26 @@
 	section.info {
 		font-size: 12px;
 
-		.nav {
-			button {
-				width: 380px;
+		.trigger {
+			button.about, button.projects {
+				width: 35%;
+				transform: none;
+				top: initial;
+				bottom: 0;
 			}
 		}
+
 		.layout {
+			padding-bottom: 100px;
+
 			> * {
 				float: none;
 				margin-left: auto;
 				margin-right: auto !important;
+			}
+
+			nav.sidenav {
+				display: none;
 			}
 		}
 	}
@@ -162,11 +177,15 @@
 	section.info {
 		font-size: 12px;
 
-		.nav {
-			button {
-				width: 320px;
+		.trigger {
+			button.about, button.projects {
+				width: 35%;
+				transform: none;
+				top: initial;
+				bottom: 0;
 			}
 		}
+		
 		.layout {
 			> * {
 				float: none;
@@ -192,4 +211,3 @@
 	}
 	*/
 }
-
