@@ -30,19 +30,19 @@ $ ->
 			infoObj.trg.animate({
 				height: '0rem',
 				paddingTop: 0
-			}, 'slow', () ->
-					targetObj.addClass('hidden camo')
+			}, 0, () ->
+					targetObj.addClass('hidden')
 					infoObj.trg.find('.layout').hide()
 			)
 		else if infoObj.mode == 'expanded' and infoObj.stage isnt target
-			infoObj.trg.find('.layout.' + infoObj.stage).addClass('hidden camo').hide()
+			infoObj.trg.find('.layout.' + infoObj.stage).addClass('hidden').hide()
 			targetObj.show()
 			infoObj.stage = target
 			setTimeout () ->
 				targetObj.removeClass 'hidden'
-				targetObj.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', (e) ->
-					$(this).removeClass 'camo'
-				)
+				# targetObj.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', (e) ->
+				# 	$(this).removeClass 'camo'
+				# )
 				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
 					$('.layout').scrollTop 0
 					$(i).data('pos', Math.round $(i).offset().top - 160 )
@@ -53,12 +53,12 @@ $ ->
 			targetObj.show()
 			infoObj.trg.animate({
 				height: '90vh'
-			}, 1000, () ->
+			}, 0, () ->
 				app.hide()
 				targetObj.removeClass('hidden')
-				targetObj.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', (e) ->
-					$(this).removeClass 'camo'
-				)
+				# targetObj.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', (e) ->
+				# 	$(this).removeClass 'camo'
+				# )
 				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
 					$('.layout').scrollTop 0
 					$(i).data('pos', Math.round $(i).offset().top - 160 )
