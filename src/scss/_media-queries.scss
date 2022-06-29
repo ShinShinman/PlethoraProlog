@@ -15,6 +15,11 @@
 			}
 		}
 		.gallery {
+			.swiper-container {
+				.button {
+					display: none;
+				}
+			}
 			.swiper-container.backward {
 				display: none;
 			}
@@ -62,6 +67,10 @@
 				width: 380px;
 				height: 380px;
 				&.backward {
+					display: none;
+				}
+
+				.button {
 					display: none;
 				}
 
@@ -148,6 +157,10 @@
 					display: none;
 				}
 
+				.button {
+					display: none;
+				}
+
 				.swiper-slide {
 					width: 320px;
 					height: 320px;
@@ -185,7 +198,7 @@
 				bottom: 0;
 			}
 		}
-		
+
 		.layout {
 			> * {
 				float: none;
@@ -193,6 +206,10 @@
 				margin-left: auto;
 				margin-right: auto !important;
 			}
+		}
+
+		nav.sidenav {
+			display: none;
 		}
 	}
 }

@@ -52,7 +52,7 @@ $ ->
 			infoObj.stage = target
 			targetObj.show()
 			infoObj.trg.animate({
-				height: '90vh'
+				height: window.innerHeight - 70
 			}, 0, () ->
 				app.hide()
 				targetObj.removeClass('hidden')
@@ -131,9 +131,6 @@ $ ->
 				forwardSwiper.slidePrev()
 			else if e.keyCode == 39
 				forwardSwiper.slideNext()
-			else if e.keyCode == 32
-				e.preventDefault()
-				infoObjToggle()
 		)
 	)
 
