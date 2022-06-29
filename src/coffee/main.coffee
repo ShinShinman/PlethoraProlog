@@ -138,10 +138,11 @@ $ ->
 		"""
 			<dl>
 		    <dt>#{item.title}</dt>
-		    <dd class="paragraph">#{item.paragraph}</dd>
 		    <dd class="place">#{item.place}</dd>
 		    <dd class="award">#{item.award}</dd>
+		    <dd class="scope">#{item.scope}</dd>
 		    <dd class="comment">#{item.comment}</dd>
+				<dd class="paragraph">#{item.paragraph}</dd>
 		  </dl>
 		"""
 
