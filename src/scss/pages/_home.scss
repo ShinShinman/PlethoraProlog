@@ -339,9 +339,15 @@ section.info {
 
 		h2 {
 			text-transform: uppercase;
-			font-weight: 400;
+			font-weight: 700;
 			letter-spacing: 0.05rem;
 			margin-top: 2 * $gmb;
+		}
+
+		.bio {
+			dl:not(:nth-last-of-type(2)) {
+				margin-bottom: 0;
+			}
 		}
 
 		// Description list
@@ -356,6 +362,12 @@ section.info {
 				&.comment {
 					font-style: italic;
 				}
+
+				&.paragraph::before {
+					content: " ";
+					display: block;
+					margin-bottom: 1em;
+				}
 		  }
 		}
 
@@ -364,16 +376,6 @@ section.info {
 			visibility: hidden;
 
 			opacity: 0;
-
-			// &.contact {
-			// 	transform: translate(0, 100px);
-			// }
-			// &.projects {
-			// 	transform: translate(-100px, 0);
-			// }
-			// &.about {
-			// 	transform: translate(100px, 0);
-			// }
 		}
 
 		//SIDENAV
@@ -395,17 +397,6 @@ section.info {
 		  background-color: #c7c7c7;
 		}
 
-		// &.camo {
-		// 	scrollbar-width: 5px;
-		// 	scrollbar-color: $backgroundColor;
-		// }
-		// &.camo::-webkit-scrollbar {
-		// 	background-color: $backgroundColor;
-		// }
-		// &.camo::-webkit-scrollbar-thumb {
-		// 	background-color: $backgroundColor;
-		// }
-
 		// 	CLOSE BUTTON
 		button.closeBtn {
 			width: 50px;
@@ -423,7 +414,28 @@ section.info {
 	.about {}
 	.contact {}
 	.manual {}
+}
 
+.cookie-stuff {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 300px;
+	z-index: 1000;
+
+	button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+		color: white;
+		background-color: black;
+	}
+
+	p {
+		margin-top: 42px;
+	}
 }
 
 

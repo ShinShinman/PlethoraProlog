@@ -182,6 +182,21 @@ $ ->
 			scrollTop: $("h2#{bookmark}").data 'pos'
 		}, 500)
 
+	# iNFORMACJA O CIASTECZKACH, COOKIE-STUFF
+	if document.cookie.search('cookieConsent=true') >=0
+		$('.cookie-stuff').hide()
+
+	cookieConsent = () ->
+		exDate = new Date()
+		exDate.setTime exDate.getTime() + 90*24*60*60*1000
+		expires = 'expires=' + exDate.toUTCString()
+		document.cookie = "cookieConsent=true; #{expires}; path=/"
+
+	$('.cookie-stuff button').click( () ->
+		cookieConsent()
+		$(this).parent().hide()
+	)
+
 
 window.onload = ->
 	$('.preloader').fadeOut()
