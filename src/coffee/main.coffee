@@ -45,7 +45,7 @@ $ ->
 				# )
 				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
 					$('.layout').scrollTop 0
-					$(i).data('pos', Math.round $(i).offset().top - 160 )
+					$(i).data('pos', Math.round $(i).offset().top - 150 )
 			, 100
 		else
 			infoObj.mode = 'expanded'
@@ -61,7 +61,7 @@ $ ->
 				# )
 				$.each infoObj.trg.find("article.#{target} h2"), (k, i) ->
 					$('.layout').scrollTop 0
-					$(i).data('pos', Math.round $(i).offset().top - 160 )
+					$(i).data('pos', Math.round $(i).offset().top - 150 )
 			)
 
 	infoTrigger.trg.click((e) ->
