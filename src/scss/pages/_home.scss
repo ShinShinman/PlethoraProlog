@@ -344,12 +344,6 @@ section.info {
 			margin-top: 2 * $gmb;
 		}
 
-		.bio {
-			dl:not(:nth-last-of-type(2)) {
-				margin-bottom: 0;
-			}
-		}
-
 		// Description list
 		dl {
 			margin-bottom: $gmb;
