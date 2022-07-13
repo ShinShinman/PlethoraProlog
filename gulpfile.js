@@ -38,6 +38,7 @@ let path = {
 };
 const filesToMove = [
 	path.src + 'ajax/**/*.json',
+	path.src + 'assets/**/*',
 	path.css + 'main.min.css',
 	path.css + 'main.min.css.map',
 	path.js + 'scripts.min.js',
