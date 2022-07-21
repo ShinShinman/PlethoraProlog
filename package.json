@@ -31,7 +31,7 @@
     "node-sass": "^7.0.1",
     "normalize-scss": "^7.0.1",
     "swiper": "^8.1.0",
-    "terser": "^5.12.1",
+    "terser": "^5.14.2",
     "yargs-parser": "^21.0.1"
   }
 }
