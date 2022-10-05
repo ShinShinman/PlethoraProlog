@@ -405,7 +405,20 @@ section.info {
 			}
 		}
 	}
-	.about {}
+	.about {
+		figure {
+			margin-bottom: $gmb;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			figcaption {
+				color: #666666;
+			}
+		}
+	}
 	.contact {}
 	.manual {}
 }

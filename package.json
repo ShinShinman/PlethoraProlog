@@ -1,7 +1,7 @@
 {
   "name": "prlg",
-  "version": "3.0.6",
-  "versionMessage": "Publikacja",
+  "version": "3.0.7",
+  "versionMessage": "Fota w about",
   "description": "Plethora minisite",
   "main": "index.html",
   "scripts": {
